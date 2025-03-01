@@ -34,5 +34,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.czt.mp3recorder:library:1.0.4'
+    // This is compile only, you need to "implementation" this aar in your main project
+    // to avoid "Direct local .aar file dependencies are not supported" error
+    compileOnly files('libs/com.czt.mp3recorder-library-1.0.4.aar')
 }
